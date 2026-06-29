@@ -1,5 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
-import { useEffect, useRef, useState } from "react";
+﻿import { useEffect, useRef, useState } from "react";
 import { motion, useScroll, useTransform, AnimatePresence } from "motion/react";
 import {
   ArrowUpRight,
@@ -8,7 +7,6 @@ import {
   Mail,
   Phone,
   Download,
-  Sparkles,
   Cpu,
   Database,
   Code2,
@@ -17,27 +15,6 @@ import {
   Server,
   ChevronRight,
 } from "lucide-react";
-
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Ayush Mittal — Software Engineer & Full Stack Developer" },
-      {
-        name: "description",
-        content:
-          "Ayush Mittal builds AI-powered products and scalable web applications. Full stack engineer focused on intelligent automation, backend systems, and modern web.",
-      },
-      { property: "og:title", content: "Ayush Mittal — Software Engineer" },
-      {
-        property: "og:description",
-        content:
-          "Building AI-powered products and scalable web applications. Full stack developer, backend systems, AI integrations.",
-      },
-      { property: "og:type", content: "website" },
-    ],
-  }),
-  component: Portfolio,
-});
 
 const HEADLINES = [
   "Building AI-Powered Digital Products",
@@ -54,7 +31,7 @@ const NAV = [
   { id: "contact", label: "Contact" },
 ];
 
-function Portfolio() {
+export default function App() {
   return (
     <div className="relative min-h-screen bg-background text-foreground antialiased">
       <Nav />
@@ -144,7 +121,7 @@ function Hero() {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-electric opacity-60" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-electric" />
             </span>
-            Available for new opportunities · 2026
+            Available for new opportunities Â· 2026
           </div>
         </FadeUp>
 
@@ -185,9 +162,9 @@ function Hero() {
 
         <FadeUp delay={0.15}>
           <p className="mt-8 max-w-2xl text-balance text-base text-muted-foreground md:text-lg">
-            Software Engineer with experience in full stack development, AI integrations,
-            backend systems, and modern web technologies. I build products that combine
-            intelligent automation, clean user experiences, and reliable engineering.
+            Software Engineer with experience in full stack development, AI integrations, backend
+            systems, and modern web technologies. I build products that combine intelligent
+            automation, clean user experiences, and reliable engineering.
           </p>
         </FadeUp>
 
@@ -226,7 +203,7 @@ function Hero() {
           <div className="mt-10 flex items-center gap-6 text-muted-foreground">
             <Social
               href="https://github.com/Ayush-Mittal-17"
-              icon={<Github className="h-4 w-4" />} 
+              icon={<Github className="h-4 w-4" />}
               label="GitHub"
             />
             <Social
@@ -323,7 +300,7 @@ function Marquee() {
               key={i}
               className="whitespace-nowrap font-mono text-xs uppercase tracking-[0.25em] text-muted-foreground/60"
             >
-              {s} <span className="text-electric/60">◆</span>
+              {s} <span className="text-electric/60">â—†</span>
             </span>
           ))}
         </motion.div>
@@ -345,13 +322,13 @@ function About() {
       <div className="grid gap-16 md:grid-cols-12">
         <div className="md:col-span-7 space-y-6 text-lg leading-relaxed text-muted-foreground">
           <p>
-            <span className="text-foreground">I'm a Computer Science Engineering student</span>{" "}
-            with a strong interest in software engineering, backend development, and AI-powered
+            <span className="text-foreground">I'm a Computer Science Engineering student</span> with
+            a strong interest in software engineering, backend development, and AI-powered
             applications.
           </p>
           <p>
             Over the last few years, I have worked across frontend, backend architecture, databases,
-            authentication systems, payment integrations, and AI workflows — spanning internships,
+            authentication systems, payment integrations, and AI workflows â€” spanning internships,
             client projects, and independent product development.
           </p>
           <p>
@@ -408,7 +385,7 @@ const EXP = [
   {
     role: "Software Developer Intern",
     org: "Trusting Brains IT Services Pvt. Ltd.",
-    when: "Jan 2026 — Jun 2026",
+    when: "Jan 2026 â€” Jun 2026",
     points: [
       "Developed scalable full-stack features using React, Node.js, and Express.",
       "Built REST APIs and dynamic UI systems serving production traffic.",
@@ -419,7 +396,7 @@ const EXP = [
   {
     role: "Web Developer Intern",
     org: "Renu Sharma Healthcare & Education Foundation",
-    when: "Aug 2025 — Nov 2025",
+    when: "Aug 2025 â€” Nov 2025",
     points: [
       "Built core modules of an Intern Management System used internally.",
       "Developed task assignment and progress tracking features.",
@@ -430,7 +407,7 @@ const EXP = [
   {
     role: "Front-End Developer Intern",
     org: "IBM SkillsBuild Internship Program",
-    when: "Jun 2024 — Aug 2024",
+    when: "Jun 2024 â€” Aug 2024",
     points: [
       "Led a team of five interns across a multi-week build cycle.",
       "Built responsive educational platform components.",
@@ -489,8 +466,8 @@ const PROJECTS = [
   {
     name: "AI Saathi",
     category: "AI Career Platform",
-    image:"/projects/aisaathi_img.jpeg",
-    live:"https://www.aisaathi.com/",
+    image: "/projects/aisaathi_img.jpeg",
+    live: "https://www.aisaathi.com/",
     overview:
       "An AI-powered career development platform that helps candidates improve interview performance and build stronger resumes through realistic simulation and feedback.",
     features: [
@@ -507,10 +484,10 @@ const PROJECTS = [
   {
     name: "Liorr",
     category: "Full Stack E-Commerce",
-    image:"/projects/liorr.jpeg",
-    live:"https://www.liorrluxury.com/",
+    image: "/projects/liorr.jpeg",
+    live: "https://www.liorrluxury.com/",
     overview:
-      "A complete e-commerce platform with customer-facing storefront and admin tooling — built end to end with secure payments and live inventory.",
+      "A complete e-commerce platform with customer-facing storefront and admin tooling â€” built end to end with secure payments and live inventory.",
     features: [
       "Dynamic Product Listings",
       "Shopping Cart & Checkout",
@@ -525,8 +502,8 @@ const PROJECTS = [
   {
     name: "FoodZy",
     category: "Recommendation System",
-    image:"/projects/foodzy.jpeg",
-    live:"https://foodzy-nine.vercel.app/",
+    image: "/projects/foodzy.jpeg",
+    live: "https://foodzy-nine.vercel.app/",
     overview:
       "A smart food recommendation platform that combines real-time weather signals and user preferences to suggest meals and compare prices across providers.",
     features: [
@@ -557,13 +534,7 @@ function Projects() {
   );
 }
 
-function ProjectCard({
-  project,
-  index,
-}: {
-  project: (typeof PROJECTS)[number];
-  index: number;
-}) {
+function ProjectCard({ project, index }: { project: (typeof PROJECTS)[number]; index: number }) {
   return (
     <motion.a
       href={project.live}
@@ -597,7 +568,7 @@ function ProjectCard({
           <div>
             <div className="flex items-center justify-between gap-4">
               <span className="font-mono text-xs uppercase tracking-[0.22em] text-electric/90">
-                {String(index + 1).padStart(2, "0")} · {project.category}
+                {String(index + 1).padStart(2, "0")} Â· {project.category}
               </span>
               <ArrowUpRight className="h-5 w-5 text-muted-foreground transition-all group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-foreground" />
             </div>
@@ -636,140 +607,6 @@ function ProjectCard({
         </div>
       </div>
     </motion.a>
-  );
-}
-
-function ProjectMock({ variant }: { variant: string }) {
-  if (variant === "interview") {
-    return (
-      <div className="flex h-full flex-col gap-3 rounded-2xl border border-white/10 bg-background/70 p-5 backdrop-blur">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <span className="grid h-7 w-7 place-items-center rounded-lg bg-electric/20 text-electric">
-              <Sparkles className="h-3.5 w-3.5" />
-            </span>
-            <span className="text-sm font-medium">AI Saathi · Session</span>
-          </div>
-          <span className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
-            Live
-          </span>
-        </div>
-        <div className="rounded-xl border border-white/5 bg-white/[0.02] p-3 text-xs text-muted-foreground">
-          <span className="text-foreground">Q3.</span> Walk me through how you'd design a rate limiter
-          for a high-traffic API.
-        </div>
-        <div className="rounded-xl border border-electric/20 bg-electric/[0.06] p-3 text-xs text-foreground/90">
-          I'd start with a token bucket per user, backed by Redis with sliding window counters…
-        </div>
-        <div className="mt-auto grid grid-cols-3 gap-2 text-[10px]">
-          {[
-            ["Clarity", 92],
-            ["Depth", 87],
-            ["Structure", 95],
-          ].map(([k, v]) => (
-            <div key={k as string} className="rounded-lg border border-white/5 bg-white/[0.02] p-2">
-              <div className="font-mono uppercase tracking-widest text-muted-foreground">{k}</div>
-              <div className="mt-1 text-base font-semibold text-foreground">{v}</div>
-              <div className="mt-1 h-1 overflow-hidden rounded bg-white/5">
-                <div className="h-full bg-electric" style={{ width: `${v}%` }} />
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    );
-  }
-  if (variant === "commerce") {
-    return (
-      <div className="flex h-full flex-col gap-3 rounded-2xl border border-white/10 bg-background/70 p-5 backdrop-blur">
-        <div className="flex items-center justify-between">
-          <span className="text-sm font-medium">Liorr · Dashboard</span>
-          <span className="font-mono text-[10px] uppercase tracking-widest text-electric">
-            +12.4% MoM
-          </span>
-        </div>
-        <div className="grid grid-cols-3 gap-2">
-          {[
-            ["Revenue", "₹4.2L"],
-            ["Orders", "1,284"],
-            ["AOV", "₹327"],
-          ].map(([k, v]) => (
-            <div key={k} className="rounded-lg border border-white/5 bg-white/[0.02] p-2">
-              <div className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
-                {k}
-              </div>
-              <div className="mt-1 text-base font-semibold">{v}</div>
-            </div>
-          ))}
-        </div>
-        <div className="relative h-24 rounded-xl border border-white/5 bg-white/[0.02] p-3">
-          <svg viewBox="0 0 200 60" className="h-full w-full">
-            <defs>
-              <linearGradient id="lg" x1="0" x2="0" y1="0" y2="1">
-                <stop offset="0" stopColor="oklch(0.7 0.22 255)" stopOpacity="0.5" />
-                <stop offset="1" stopColor="oklch(0.7 0.22 255)" stopOpacity="0" />
-              </linearGradient>
-            </defs>
-            <path
-              d="M0 45 L20 38 L40 42 L60 28 L80 32 L100 18 L120 22 L140 12 L160 18 L180 8 L200 14 L200 60 L0 60 Z"
-              fill="url(#lg)"
-            />
-            <path
-              d="M0 45 L20 38 L40 42 L60 28 L80 32 L100 18 L120 22 L140 12 L160 18 L180 8 L200 14"
-              stroke="oklch(0.7 0.22 255)"
-              strokeWidth="1.5"
-              fill="none"
-            />
-          </svg>
-        </div>
-        <div className="mt-auto space-y-1.5">
-          {["Order #1042 · Shipped", "Order #1041 · Paid", "Order #1040 · Processing"].map((r) => (
-            <div
-              key={r}
-              className="flex items-center justify-between rounded-lg border border-white/5 bg-white/[0.02] px-3 py-1.5 text-[11px] text-muted-foreground"
-            >
-              <span>{r}</span>
-              <span className="font-mono text-electric/80">✓</span>
-            </div>
-          ))}
-        </div>
-      </div>
-    );
-  }
-  return (
-    <div className="flex h-full flex-col gap-3 rounded-2xl border border-white/10 bg-background/70 p-5 backdrop-blur">
-      <div className="flex items-center justify-between">
-        <span className="text-sm font-medium">FoodZy · Recommendations</span>
-        <span className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
-          24°C · Rain
-        </span>
-      </div>
-      <div className="rounded-xl border border-white/5 bg-white/[0.02] p-3 text-xs">
-        <div className="font-mono uppercase tracking-widest text-muted-foreground">
-          Suggested for tonight
-        </div>
-        <div className="mt-2 text-foreground">Warm ramen, masala chai, butter chicken</div>
-      </div>
-      <div className="grid grid-cols-2 gap-2">
-        {[
-          ["Swiggy", "₹289"],
-          ["Zomato", "₹312"],
-          ["EatSure", "₹275"],
-          ["Magicpin", "₹298"],
-        ].map(([k, v]) => (
-          <div
-            key={k}
-            className="flex items-center justify-between rounded-lg border border-white/5 bg-white/[0.02] px-3 py-2 text-xs"
-          >
-            <span className="text-muted-foreground">{k}</span>
-            <span className="font-mono text-foreground">{v}</span>
-          </div>
-        ))}
-      </div>
-      <div className="mt-auto rounded-xl border border-electric/20 bg-electric/[0.06] p-3 text-xs text-foreground/90">
-        Best value: <span className="font-medium">EatSure</span> · saves ₹37
-      </div>
-    </div>
   );
 }
 
@@ -912,10 +749,30 @@ function Achievements() {
 /* ---------- CONTACT ---------- */
 function Contact() {
   const items = [
-    { icon: <Mail className="h-4 w-4" />, label: "Email", value: "mittalayush989@gmail.com", href: "mailto:mittalayush989@gmail.com" },
-    { icon: <Linkedin className="h-4 w-4" />, label: "LinkedIn", value: "www.linkedin.com/in/ayushmittal17/", href: "https://www.linkedin.com/in/ayushmittal17/" },
-    { icon: <Github className="h-4 w-4" />, label: "GitHub", value: "www.github.com/Ayush-Mittal-17", href: "https://github.com/Ayush-Mittal-17" },
-    { icon: <Phone className="h-4 w-4" />, label: "Phone", value: "+91 · 931 840 5929", href: "tel:+919318405929" },
+    {
+      icon: <Mail className="h-4 w-4" />,
+      label: "Email",
+      value: "mittalayush989@gmail.com",
+      href: "mailto:mittalayush989@gmail.com",
+    },
+    {
+      icon: <Linkedin className="h-4 w-4" />,
+      label: "LinkedIn",
+      value: "www.linkedin.com/in/ayushmittal17/",
+      href: "https://www.linkedin.com/in/ayushmittal17/",
+    },
+    {
+      icon: <Github className="h-4 w-4" />,
+      label: "GitHub",
+      value: "www.github.com/Ayush-Mittal-17",
+      href: "https://github.com/Ayush-Mittal-17",
+    },
+    {
+      icon: <Phone className="h-4 w-4" />,
+      label: "Phone",
+      value: "+91 Â· 931 840 5929",
+      href: "tel:+919318405929",
+    },
   ];
   return (
     <section id="contact" className="relative overflow-hidden py-28 md:py-40">
@@ -940,7 +797,7 @@ function Contact() {
         <FadeUp delay={0.15}>
           <p className="mx-auto mt-6 max-w-xl text-balance text-muted-foreground">
             Whether it's a startup idea, a software project, an AI product, or an engineering
-            opportunity — I'm always open to connecting and collaborating.
+            opportunity â€” I'm always open to connecting and collaborating.
           </p>
         </FadeUp>
 
@@ -985,10 +842,16 @@ function Footer() {
           </div>
         </div>
         <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-muted-foreground">
-          <a href="https://github.com/Ayush-Mittal-17" className="hover:text-foreground">GitHub</a>
-          <a href="https://www.linkedin.com/in/ayushmittal17/" className="hover:text-foreground">LinkedIn</a>
-          <a href="mailto:mittalayush989@gmail.com" className="hover:text-foreground">Email</a>
-          <span className="font-mono text-xs uppercase tracking-[0.2em]">© 2026</span>
+          <a href="https://github.com/Ayush-Mittal-17" className="hover:text-foreground">
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/ayushmittal17/" className="hover:text-foreground">
+            LinkedIn
+          </a>
+          <a href="mailto:mittalayush989@gmail.com" className="hover:text-foreground">
+            Email
+          </a>
+          <span className="font-mono text-xs uppercase tracking-[0.2em]">Â© 2026</span>
         </div>
       </div>
       <div className="border-t border-white/5 py-4 text-center text-sm text-muted-foreground/70">
