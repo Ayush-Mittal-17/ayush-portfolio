@@ -121,7 +121,7 @@ function Hero() {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-electric opacity-60" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-electric" />
             </span>
-            Available for new opportunities Â· 2026
+            Available for new opportunities · 2026
           </div>
         </FadeUp>
 
@@ -178,7 +178,8 @@ function Hero() {
               <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </a>
             <a
-              href="#"
+              href="/ayush-resume.pdf"
+              download="ayush-resume.pdf"
               className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-5 py-3 text-base font-medium text-foreground transition-colors hover:bg-white/[0.07]"
             >
               <Download className="h-4 w-4" />
@@ -300,7 +301,7 @@ function Marquee() {
               key={i}
               className="whitespace-nowrap font-mono text-xs uppercase tracking-[0.25em] text-muted-foreground/60"
             >
-              {s} <span className="text-electric/60">â—†</span>
+              {s} <span className="text-electric/60">·</span>
             </span>
           ))}
         </motion.div>
@@ -328,7 +329,7 @@ function About() {
           </p>
           <p>
             Over the last few years, I have worked across frontend, backend architecture, databases,
-            authentication systems, payment integrations, and AI workflows â€” spanning internships,
+            authentication systems, payment integrations, and AI workflows” spanning internships,
             client projects, and independent product development.
           </p>
           <p>
@@ -385,7 +386,7 @@ const EXP = [
   {
     role: "Software Developer Intern",
     org: "Trusting Brains IT Services Pvt. Ltd.",
-    when: "Jan 2026 â€” Jun 2026",
+    when: "Jan 2026 - Jun 2026",
     points: [
       "Developed scalable full-stack features using React, Node.js, and Express.",
       "Built REST APIs and dynamic UI systems serving production traffic.",
@@ -396,7 +397,7 @@ const EXP = [
   {
     role: "Web Developer Intern",
     org: "Renu Sharma Healthcare & Education Foundation",
-    when: "Aug 2025 â€” Nov 2025",
+    when: "Aug 2025 - Nov 2025",
     points: [
       "Built core modules of an Intern Management System used internally.",
       "Developed task assignment and progress tracking features.",
@@ -407,7 +408,7 @@ const EXP = [
   {
     role: "Front-End Developer Intern",
     org: "IBM SkillsBuild Internship Program",
-    when: "Jun 2024 â€” Aug 2024",
+    when: "Jun 2024 - Aug 2024",
     points: [
       "Led a team of five interns across a multi-week build cycle.",
       "Built responsive educational platform components.",
@@ -487,7 +488,7 @@ const PROJECTS = [
     image: "/projects/liorr.jpeg",
     live: "https://www.liorrluxury.com/",
     overview:
-      "A complete e-commerce platform with customer-facing storefront and admin tooling â€” built end to end with secure payments and live inventory.",
+      "A complete e-commerce platform with customer-facing storefront and admin tooling — built end to end with secure payments and live inventory.",
     features: [
       "Dynamic Product Listings",
       "Shopping Cart & Checkout",
@@ -568,7 +569,7 @@ function ProjectCard({ project, index }: { project: (typeof PROJECTS)[number]; i
           <div>
             <div className="flex items-center justify-between gap-4">
               <span className="font-mono text-xs uppercase tracking-[0.22em] text-electric/90">
-                {String(index + 1).padStart(2, "0")} Â· {project.category}
+                {String(index + 1).padStart(2, "0")} · {project.category}
               </span>
               <ArrowUpRight className="h-5 w-5 text-muted-foreground transition-all group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-foreground" />
             </div>
@@ -770,7 +771,7 @@ function Contact() {
     {
       icon: <Phone className="h-4 w-4" />,
       label: "Phone",
-      value: "+91 Â· 931 840 5929",
+      value: "+91 931 840 5929",
       href: "tel:+919318405929",
     },
   ];
@@ -797,7 +798,7 @@ function Contact() {
         <FadeUp delay={0.15}>
           <p className="mx-auto mt-6 max-w-xl text-balance text-muted-foreground">
             Whether it's a startup idea, a software project, an AI product, or an engineering
-            opportunity â€” I'm always open to connecting and collaborating.
+            opportunity — I'm always open to connecting and collaborating.
           </p>
         </FadeUp>
 
@@ -851,7 +852,7 @@ function Footer() {
           <a href="mailto:mittalayush989@gmail.com" className="hover:text-foreground">
             Email
           </a>
-          <span className="font-mono text-xs uppercase tracking-[0.2em]">Â© 2026</span>
+          <span className="font-mono text-xs uppercase tracking-[0.2em]">© 2026</span>
         </div>
       </div>
       <div className="border-t border-white/5 py-4 text-center text-sm text-muted-foreground/70">
